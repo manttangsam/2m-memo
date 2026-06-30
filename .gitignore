@@ -1,0 +1,28 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# APKs and generated artifacts
+*.apk
+*.aab
+*.ap_
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Secrets and local user data
+*.keystore
+*.jks
+*.env
+*.2memo
+*.memo.json
+
+# Web
+node_modules/
+dist/
+.netlify/
