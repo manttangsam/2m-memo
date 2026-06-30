@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2M Memo Web Editor</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="toolbar" aria-label="2M Memo tools">
+      <button id="openBtn" title="파일 열기">▣</button>
+      <button id="saveBtn" title="저장">💾</button>
+      <button id="penBtn" class="active" title="펜">✎</button>
+      <button id="eraserBtn" title="지우개">⌫</button>
+      <button id="panBtn" title="이동">↔</button>
+      <button id="mindBtn" title="마인드맵">◎</button>
+      <button id="childBtn" title="하위 박스">└</button>
+      <button id="siblingBtn" title="형제 박스">├</button>
+      <button id="themeBtn" title="테마">🎨</button>
+      <button id="centerBtn" title="중앙으로">⌖</button>
+      <label class="swatch"><input id="colorInput" type="color" value="#132238" title="색상"></label>
+      <input id="fileInput" type="file" accept=".2memo,.json,application/json" hidden>
+    </header>
+    <canvas id="canvas"></canvas>
+    <section class="status">
+      <strong id="zoomText">100%</strong>
+      <span id="fileText">새 메모</span>
+    </section>
+    <aside class="hint">
+      <b>2M Memo Web</b>
+      <span>파일을 열고 PC에서 이어 편집하세요.</span>
+    </aside>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
